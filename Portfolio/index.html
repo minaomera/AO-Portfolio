@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amina Omeragic</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="background">
+
+<div class="nav">
+    <a class="a active" href="#">welcome</a>
+    <a class="b" href="#">about</a>
+    <a class="c" href="#">experience</a>
+    <a class="d" href="#">work</a>
+</div>
+
+<div id="overlay"><img src="images/stars2.gif">
+    <img src="images/stars2.gif">
+    <img src="images/stars2.gif">
+    <img src="images/welcomeicon.gif">
+</div>
+
+</div>
+
+<div class="header">
+
+    <div class="welcome">
+        <h1>Amina Omeragic</h1>
+        <h3>Technical Communicator</h3>
+    </div>
+
+<div class="about">
+        <h1><b>about me</b></h1><br>
+            <p>
+            I am a third-year student currently enrolled in the Professional and Technical Communication B.A. program offered at the University of North Texas at Denton.<br>
+            <br>
+            I want to expand content creation, programming, and overall editing knowledge in technical-based operations to apply these principles towards a growing career.<br>
+            <br>
+            I am interested in paving the way for practical uses of innovative tools along with not-so-new materials.<br>
+            <br>
+            I am also looking for opportunities to develop new <i>and</i> hone existing skills. This is ultimately what drives me to exceed the expectations of my colleagues and prospective employers as well.<br>
+            </p>
+</div>>
+
+<div class="experience">
+    <h1><b>my experience</b></h1><br>
+        <p>
+        Although I have limited experience in the industry, I am eager to learn.<br>
+        <br>
+        <strong>NOTE:</strong> Attached is <a href="Resume.pdf">an up-to-date PDF</a> of my resume. Click to be redirected.<br>
+        I am seeking out internship opportunities for the Spring/Summer 2020 season. If you are looking for a recent technical communication graduate (or soon-to-be graduate), please contact me through LinkedIn or Gmail.<br>        </p>
+</div>
+
+<div class="work">
+    <h1><b>my various works</b></h1><br>
+        <p>
+        Below is a collection of my technical writing assignments. These vary from academic IMR&D reports to developmental edits made for clients.<br>
+        <br>
+       <strong>NOTE:</strong> Files will open in a new tab.<br>       
+        <br>
+        <strong>IMR&D Reports:</strong><br>
+        <a href="Intercultural Communication Draft.pdf">Intercultural Communication<strong>&mdash;TECM 4500: Content Analysis</strong></a><br>
+        <a href="Plain Language Analysis for the Department of Justice.docx.pdf">Plain Language Analysis&mdash;<strong>TECM 4180: Advanced Technical Communication</strong></a><br>
+        <br>
+        <strong>Technical Documentation:</strong><br>
+        <a href="Air Swimmer Knowledge Base.pdf">Air Swimmers Knowledge Base&mdash;<strong>TECM 4250: Procedures and Manuals</strong></a><br>
+        <a href="FINISHEDOperatingSystemGuide.pdf">Operating System Guide&mdash;<strong>TECM 4800: Special Topics in Technical Communication</strong></a><br>
+        </p>
+</div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(active){
+        $('a').click(function(){
+            var selected = $(this);
+            $('a').removeClass('.active');
+            $(selected).addClass('active');
+        });
+
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $welcome = $('.welcome'),
+        $about = $('.about'),
+        $experience = $('.experience'),
+        $work = $('.work');
+
+        $a.click(function(){
+            $welcome.fadeIn();
+            $about.fadeOut();
+            $experience.fadeOut();
+            $work.fadeOut();
+        });  
+        $b.click(function(){
+            $about.fadeIn();
+            $welcome.fadeOut();
+            $experience.fadeOut();
+            $work.fadeOut();
+        });
+        $c.click(function(){
+            $experience.fadeIn();
+            $welcome.fadeOut();
+            $about.fadeOut();
+            $work.fadeOut();
+        });
+        $d.click(function(){
+            $work.fadeIn();
+            $welcome.fadeOut();
+            $about.fadeOut();
+            $experience.fadeOut();
+        });
+    });
+
+</script>
+    
+<div class="footer">
+    <p><div id="overlay"><img src="images/msg.gif">
+        <a href="https://www.linkedin.com/in/amina-omeragic/" target="_blank" rel="noopener">linkedin.com/in/amina-omeragic</a><br>
+        <br>
+        <div id="overlay"><img src="images/msg.gif">
+        minaomeragic14@gmail.com
+    </p>
+</div>
+
+</body>
+</html>
